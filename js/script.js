@@ -1,3 +1,15 @@
+const Toast = Swal.mixin({
+  toast: true,
+  position: "top-end",
+  iconColor: "white",
+  customClass: {
+    popup: "colored-toast",
+  },
+  showConfirmButton: false,
+  timer: 1500,
+  timerProgressBar: true,
+});
+
 let currentStep = 0;
 
 var x = document.getElementsByClassName("card");
@@ -75,9 +87,9 @@ function validateForm() {
   }
 
   if (valid == false) {
-    Swal.fire({
-      title: "Wajib diisi!",
+    Toast.fire({
       icon: "warning",
+      title: "Wajib Diisi!",
     });
   }
   return valid;
