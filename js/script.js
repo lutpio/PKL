@@ -31,11 +31,11 @@ function showStep(step) {
 function nextStep() {
   const cards = document.querySelectorAll(".card");
 
+  if (!validateForm()) return false;
   if (currentStep < cards.length - 1) {
     currentStep++;
     showStep(currentStep);
   } else {
-    //...the form gets submitted:
     document.getElementById("form-question").submit();
     return false;
   }
@@ -46,6 +46,41 @@ function prevStep() {
     currentStep--;
     showStep(currentStep);
   }
+}
+
+function validateForm() {
+  var valid = false;
+  x = document.getElementsByClassName("card");
+  y = x[currentStep].getElementsByTagName("input");
+  y2 = x[currentStep].getElementsByTagName("textarea");
+
+  //   untuk tag input
+  for (i = 0; i < y.length; i++) {
+    if (y[i].getAttribute("type") == "radio") {
+      if (y[i].checked) {
+        valid = true;
+      }
+    } else {
+      if (y[i].value != "") {
+        valid = true;
+      }
+    }
+  }
+
+  //   untuk tag textarea
+  for (i = 0; i < y2.length; i++) {
+    if (y2[i].value != "") {
+      valid = true;
+    }
+  }
+
+  if (valid == false) {
+    Swal.fire({
+      title: "Wajib diisi!",
+      icon: "warning",
+    });
+  }
+  return valid;
 }
 
 showStep(currentStep);
