@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <script src="https://kit.fontawesome.com/bd49e73b8b.js" crossorigin="anonymous"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+      integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Owl Stylesheets -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link href="https://cdn.datatables.net/v/bs5/dt-1.13.8/datatables.min.css" rel="stylesheet" />
+
+    <script src="https://cdn.datatables.net/v/bs5/dt-1.13.8/datatables.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary rounded shadow-sm"
+      aria-label="Thirteenth navbar example"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand col-lg-3 me-0 d-md-none" href="#"
+          ><img src="logo.png" alt="" height="45"
+        /></a>
+        <button
+          class="navbar-toggler rounded-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarsExample11"
+          aria-controls="navbarsExample11"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
+          <a class="navbar-brand col-lg-3 me-0 d-none d-md-block" href="#"
+            ><img src="logo.png" alt="" height="45"
+          /></a>
+          <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+            <li class="nav-item"><a class="nav-link link-dark" href="">BERANDA</a></li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link link-dark dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >PROFIL</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link link-dark dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >INFO PUBLIK</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link link-dark dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >GALERI</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link link-dark dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >PPID</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link link-dark dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >BERITA</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link link-dark" href="">Mitra</a></li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link link-dark dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >PENGADUAN</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link link-dark dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >UPTD</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#">Pembibitan Ternak dan Hijauan Pakan Ternak</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+          <!-- <div class="d-lg-flex col-lg-3 justify-content-lg-end">
+            <button class="btn btn-primary">Button</button>
+          </div> -->
+        </div>
+      </div>
+    </nav>
+    <div class="container mb-5">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="selector" />
+        <label class="form-check-label" for="selector"> MODE </label>
+      </div>
+      <h1>Hello, world!</h1>
+
+      <div class="row d-flex align-items-center vh-100">
+        <div class="col-md-6">
+          <h1 class="display-2 fw-semibold">Populasi Ternak Kalimantan Timur Tahun 2022</h1>
+        </div>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                <div class="card border-0 shadow-sm mb-3" style="height: 340px">
+                  <img
+                    src="https://peternakan.kaltimprov.go.id/upload/ternak/small_22-09-2022-06-13-38-8860.png"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body d-flex flex-column">
+                    <div>
+                      <h5 class="card-title">Puyuh</h5>
+                      <div class="card-text d-flex justify-content-between align-items-center">
+                        <small class="text-secondary">Populasi Akhir</small>
+                        <span class="fw-semibold fs-5">88,143 </span>
+                      </div>
+                    </div>
+
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    <div class="mt-auto text-center">
+                      <a
+                        href="#exampleModal"
+                        class="link-secondary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                        >Lihat</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card border-0 shadow-sm mb-3" style="height: 340px">
+                  <img
+                    src="https://peternakan.kaltimprov.go.id/upload/ternak/small_22-09-2022-06-14-09-5491.png"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body d-flex flex-column">
+                    <div>
+                      <h5 class="card-title">Ayam Ras Petelur</h5>
+                      <div class="card-text d-flex justify-content-between align-items-center">
+                        <small class="text-secondary">Populasi Akhir</small>
+                        <span class="fw-semibold fs-5">1,340,217</span>
+                      </div>
+                    </div>
+
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    <div class="mt-auto text-center">
+                      <a href="" class="link-secondary">Lihat</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="card border-0 shadow-sm mb-3" style="height: 340px">
+                  <img
+                    src="https://peternakan.kaltimprov.go.id/upload/ternak/small_22-09-2022-06-15-01-8478.png"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body d-flex flex-column">
+                    <div>
+                      <h5 class="card-title">Sapi Perah</h5>
+                      <div class="card-text d-flex justify-content-between align-items-center">
+                        <small class="text-secondary">Populasi Akhir</small>
+                        <span class="fw-semibold fs-5">68</span>
+                      </div>
+                    </div>
+
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    <div class="mt-auto text-center">
+                      <a href="" class="link-secondary">Lihat</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card border-0 shadow-sm mb-3" style="height: 340px">
+                  <img
+                    src="https://peternakan.kaltimprov.go.id/upload/ternak/small_22-09-2022-06-14-33-3889.png"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body d-flex flex-column">
+                    <div>
+                      <h5 class="card-title">Domba</h5>
+                      <div class="card-text d-flex justify-content-between align-items-center">
+                        <small class="text-secondary">Populasi Akhir</small>
+                        <span class="fw-semibold fs-5">153</span>
+                      </div>
+                    </div>
+
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    <div class="mt-auto text-center">
+                      <a href="" class="link-secondary">Lihat</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row row-cols-2 row-cols-md-6 vh-100 mt-5">
+        <div class="col d-flex">
+          <a
+            href="https://peternakan.kaltimprov.go.id/kategori-download/barang-yang-diserahkan-ke-masyarakat"
+            class="text-center mx-auto text-decoration-none text-warning"
+            data-asw-orgfontsize="16"
+            style="font-size: 16px"
+          >
+            <h1 class="display-1"><i class="bi bi-folder-fill"></i></h1>
+            <p class="text-center" data-asw-orgfontsize="16" style="font-size: 16px">
+              <b class="text-dark">Barang yang diserahkan ke Masyarakat </b>
+            </p>
+          </a>
+        </div>
+        <div class="col d-flex">
+          <a
+            href="https://peternakan.kaltimprov.go.id/kategori-download/barang-yang-diserahkan-ke-masyarakat"
+            class="text-center mx-auto text-decoration-none text-warning"
+            data-asw-orgfontsize="16"
+            style="font-size: 16px"
+          >
+            <h1 class="display-1"><i class="bi bi-folder-fill"></i></h1>
+            <p class="text-center" data-asw-orgfontsize="16" style="font-size: 16px">
+              <b class="text-dark">Barang yang diserahkan ke Masyarakat </b>
+            </p>
+          </a>
+        </div>
+        <div class="col d-flex">
+          <a
+            href="https://peternakan.kaltimprov.go.id/kategori-download/barang-yang-diserahkan-ke-masyarakat"
+            class="text-center mx-auto text-decoration-none text-warning"
+            data-asw-orgfontsize="16"
+            style="font-size: 16px"
+          >
+            <h1 class="display-1"><i class="bi bi-folder-fill"></i></h1>
+            <p class="text-center" data-asw-orgfontsize="16" style="font-size: 16px">
+              <b class="text-dark">Barang yang diserahkan ke Masyarakat </b>
+            </p>
+          </a>
+        </div>
+        <div class="col d-flex">
+          <a
+            href="https://peternakan.kaltimprov.go.id/kategori-download/barang-yang-diserahkan-ke-masyarakat"
+            class="text-center mx-auto text-decoration-none text-warning"
+            data-asw-orgfontsize="16"
+            style="font-size: 16px"
+          >
+            <h1 class="display-1"><i class="bi bi-folder-fill"></i></h1>
+            <p class="text-center" data-asw-orgfontsize="16" style="font-size: 16px">
+              <b class="text-dark">Barang yang diserahkan ke Masyarakat </b>
+            </p>
+          </a>
+        </div>
+        <div class="col d-flex">
+          <a
+            href="https://peternakan.kaltimprov.go.id/kategori-download/barang-yang-diserahkan-ke-masyarakat"
+            class="text-center mx-auto text-decoration-none text-warning"
+            data-asw-orgfontsize="16"
+            style="font-size: 16px"
+          >
+            <h1 class="display-1"><i class="bi bi-folder-fill"></i></h1>
+            <p class="text-center" data-asw-orgfontsize="16" style="font-size: 16px">
+              <b class="text-dark">Barang yang diserahkan ke Masyarakat </b>
+            </p>
+          </a>
+        </div>
+        <div class="col d-flex">
+          <a
+            href="https://peternakan.kaltimprov.go.id/kategori-download/barang-yang-diserahkan-ke-masyarakat"
+            class="text-center mx-auto text-decoration-none text-warning"
+            data-asw-orgfontsize="16"
+            style="font-size: 16px"
+          >
+            <h1 class="display-1"><i class="bi bi-folder-fill"></i></h1>
+            <p class="text-center" data-asw-orgfontsize="16" style="font-size: 16px">
+              <b class="text-dark">Barang yang diserahkan ke Masyarakat </b>
+            </p>
+          </a>
+        </div>
+        <div class="col d-flex">
+          <a
+            href="https://peternakan.kaltimprov.go.id/kategori-download/barang-yang-diserahkan-ke-masyarakat"
+            class="text-center mx-auto text-decoration-none text-warning"
+            data-asw-orgfontsize="16"
+            style="font-size: 16px"
+          >
+            <h1 class="display-1"><i class="bi bi-folder-fill"></i></h1>
+            <p class="text-center" data-asw-orgfontsize="16" style="font-size: 16px">
+              <b class="text-dark">Barang yang diserahkan ke Masyarakat </b>
+            </p>
+          </a>
+        </div>
+      </div>
+      <div class="row row-cols-2 row-cols-md-4 g-2">
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="https://peternakan.kaltimprov.go.id/upload/galeri_photo/24-01-2024-12-29-34-1200.png"
+              alt=""
+              class="card-img"
+            />
+
+            <div class="card-body">
+              <h5 class="card-title fw-bold">
+                Evaluasi Penilaian Kinerja 2023 dan Workshop Input...
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="https://peternakan.kaltimprov.go.id/upload/galeri_photo/01-02-2024-06-28-21-439.jpeg"
+              alt=""
+              class="card-img"
+            />
+
+            <div class="card-body">
+              <h5 class="card-title fw-bold">
+                Penyerahan Bantuan Ternak Dalam Rangka Kunker Pj....
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="https://peternakan.kaltimprov.go.id/upload/galeri_photo/31-01-2024-07-09-09-3239.png"
+              alt=""
+              class="card-img"
+            />
+
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Bimtek Aplikasi Lalu Lintas iSIKHNAS</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="https://peternakan.kaltimprov.go.id/upload/galeri_photo/31-01-2024-07-09-09-3239.png"
+              alt=""
+              class="card-img"
+            />
+
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Bimtek Aplikasi Lalu Lintas iSIKHNAS</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row vh-100 mt-4">
+        <div class="col-md-8">
+          <h3>BERITA TERKINI</h3>
+
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="home-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#home-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="home-tab-pane"
+                aria-selected="true"
+              >
+                Berita Utama
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="profile-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#profile-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="profile-tab-pane"
+                aria-selected="false"
+              >
+                Artikel
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content mt-3" id="myTabContent">
+            <div
+              class="tab-pane fade show active"
+              id="home-tab-pane"
+              role="tabpanel"
+              aria-labelledby="home-tab"
+              tabindex="0"
+            >
+              <div class="row row-cols-md-3 row-cols-1">
+                <div class="col">
+                  <div class="card h-100">
+                    <img
+                      src="https://peternakan.kaltimprov.go.id/upload/artikel/small_10-01-2024-12-43-44-3893.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Upacara Peringatan HUT Ke-67 Provinsi Kalimantan Timur
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img
+                      src="https://peternakan.kaltimprov.go.id/upload/artikel/small_10-01-2024-12-43-44-3893.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Upacara Peringatan HUT Ke-67 Provinsi Kalimantan Timur
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img
+                      src="https://peternakan.kaltimprov.go.id/upload/artikel/small_10-01-2024-12-43-44-3893.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Upacara Peringatan HUT Ke-67 Provinsi Kalimantan Timur
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="profile-tab-pane"
+              role="tabpanel"
+              aria-labelledby="profile-tab"
+              tabindex="0"
+            >
+              <div class="row row-cols-md-3 row-cols-1">
+                <div class="col">
+                  <div class="card border-0 h-100">
+                    <img
+                      src="https://peternakan.kaltimprov.go.id/upload/artikel/small_20-06-2022-12-02-00-4521.jpg"
+                      class="card-img"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">PENANAMAN RUMPUT ODOT DI LAHAN EKS TAMBANG</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card border-0 h-100">
+                    <img
+                      src="https://peternakan.kaltimprov.go.id/upload/artikel/small_20-06-2022-12-02-00-4521.jpg"
+                      class="card-img"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">PENANAMAN RUMPUT ODOT DI LAHAN EKS TAMBANG</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card border-0 h-100">
+                    <img
+                      src="https://peternakan.kaltimprov.go.id/upload/artikel/small_20-06-2022-12-02-00-4521.jpg"
+                      class="card-img"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">PENANAMAN RUMPUT ODOT DI LAHAN EKS TAMBANG</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h3>AGENDA</h3>
+          <ul class="list-unstyled">
+            <li>
+              <a
+                class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
+                href="#exampleModal1"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal1"
+              >
+                <svg
+                  class="bd-placeholder-img"
+                  width="100%"
+                  height="96"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  preserveAspectRatio="xMidYMid slice"
+                  focusable="false"
+                >
+                  <rect width="100%" height="100%" fill="#777"></rect>
+                </svg>
+                <div class="col-lg-8 text-dark">
+                  <h6 class="mb-0">Expo Produk UMKM dan Produk Peternakan</h6>
+                  <small class="text-body-secondary">January 15, 2023</small>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
+                href="#exampleModal1"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal1"
+              >
+                <svg
+                  class="bd-placeholder-img"
+                  width="100%"
+                  height="96"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  preserveAspectRatio="xMidYMid slice"
+                  focusable="false"
+                >
+                  <rect width="100%" height="100%" fill="#777"></rect>
+                </svg>
+                <div class="col-lg-8 text-dark">
+                  <h6 class="mb-0">Gerakan Minum Susu dan Makan Daging</h6>
+                  <small class="text-body-secondary">January 14, 2023</small>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
+                href="#exampleModal1"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal1"
+              >
+                <svg
+                  class="bd-placeholder-img"
+                  width="100%"
+                  height="96"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  preserveAspectRatio="xMidYMid slice"
+                  focusable="false"
+                >
+                  <rect width="100%" height="100%" fill="#777"></rect>
+                </svg>
+                <div class="col-lg-8 text-dark">
+                  <h6 class="mb-0">Vaksinasi Rabies Gratis dan Konsultasi Hewan</h6>
+                  <small class="text-body-secondary">January 13, 2023</small>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Button trigger modal -->
+      <!-- <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal1"
+      >
+        Launch demo modal
+      </button> -->
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal1"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Expo Produk UMKM dan Produk Peternakan
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body row flex-lg-row-reverse">
+              <div class="col-lg-4">
+                <p class="d-flex fw-semibold align-items-center gap-2">
+                  <i class="bi bi-geo-alt-fill"></i> Gor Kadrie Oening, Jl. Wahid Hasyim, Sempaja
+                </p>
+                <p class="d-flex fw-semibold align-items-center gap-2">
+                  <i class="bi bi-clock-fill"></i> 09-01-2024 Sampai 13-01-2024
+                </p>
+                <p class="d-flex fw-semibold align-items-center gap-2">
+                  <i class="bi bi-building-fill"></i> Pascapanen dan Kesehatan Masyarakat Veteriner
+                </p>
+              </div>
+              <div class="col-lg-8">
+                <p>
+                  Yuk, jangan sampai ketinggalan stan Dinas Peternakan dan Kesehatan Hewan di Pesta
+                  Rakyat Kaltim 2024 di Gor Kadrie Oening Sempaja! Ada Expo Produk UMKM dan produk
+                  peternakan seru yang bakal bikin kamu terkesima. Dari produk lokal yang keren
+                  sampai karya UMKM yang unik, semuanya ada di sana! Di tengah keramaian acara,
+                  mampir ke stan ini penting banget! Dukung peternakan lokal, coba produknya, dan
+                  nikmati keajaibannya. Jadi bagian dari perayaan kami sambil mendukung usaha kecil
+                  yang luar biasa di stan Dinas Peternakan dan Kesehatan Hewan, ya! Ayo, seru-seruan
+                  bareng!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <!-- <h1 class="modal-title fs-5" id="exampleModalLabel">Puyuh</h1> -->
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="text-center">
+              <img
+                src="https://peternakan.kaltimprov.go.id/upload/ternak/small_22-09-2022-06-13-38-8860.png"
+                class="img-fluid rounded"
+                alt="..."
+              />
+            </div>
+            <h4 class="text-center fw-bold mb-5">Puyuh</h4>
+            <div class="table-responsive">
+              <table class="table table-striped" id="example">
+                <thead>
+                  <tr>
+                    <th scope="col">Kabupaten/Kota</th>
+                    <th scope="col">Populasi Awal</th>
+                    <th scope="col">Pemasukan</th>
+                    <th scope="col">Pengeluaran</th>
+                    <th scope="col">Pemotongan</th>
+                    <th scope="col">Populasi Akhir</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>Paser</th>
+                    <td>1,906,183</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>2,722,029</td>
+                    <td>1,817,261</td>
+                  </tr>
+                  <tr>
+                    <th>Samarinda</th>
+                    <td>869,913</td>
+                    <td>48,300</td>
+                    <td>0</td>
+                    <td>1,242,236</td>
+                    <td>1,109,270</td>
+                  </tr>
+                  <tr>
+                    <th>Bontang</th>
+                    <td>126,147</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>180,138</td>
+                    <td>102,638</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a href="" class="btn btn-outline-secondary fw-semibold">Lihat Ternak Lainnya</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      new DataTable("#example");
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        autoplay: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+          0: {
+            items: 2,
+          },
+          600: {
+            items: 3,
+          },
+          1000: {
+            items: 3,
+          },
+        },
+      });
+
+      $(document).ready(function () {
+        $("#selector").change(function () {
+          $("body").toggleClass("bg-dark");
+          $("h1").toggleClass("text-light");
+          $("label").toggleClass("text-light");
+        });
+      });
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
