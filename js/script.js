@@ -37,7 +37,7 @@ function showStep(step) {
   const question_progress = document.querySelector(".question-progress");
   const percent = ((step + 1) / cards.length) * 100;
   progress.style.width = `${percent}%`;
-  question_progress.innerHTML = `${step + 1} dari 5 Pertanyaan `;
+  question_progress.innerHTML = `${step + 1} dari ${cards.length} Pertanyaan `;
 }
 
 function nextStep() {
