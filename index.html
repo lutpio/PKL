@@ -28,10 +28,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- jquery -->
 
-    <!-- sweetalert2 -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
-    <!-- sweetalert2 -->
-
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -49,6 +45,7 @@
           role="alert"
           aria-live="assertive"
           aria-atomic="true"
+          data-bs-delay="10000"
         >
           <div class="toast-header">
             <svg
@@ -141,7 +138,10 @@
                     </div>
                   </div>
                 </div>
-                <!-- ini bisa di foreach aja -->
+                <!-- 
+                  ini bisa di foreach aja 
+                  ganti id, name
+                -->
                 <div class="card border-0 bg-transparent mt-4">
                   <h3 class="fw-semibold">
                     Bagaimana pendapat Saudara tentang kesesuaian persyaratan pelayanan dengan jenis
@@ -279,6 +279,7 @@
                   </div>
                 </div>
 
+                <!-- textarea  -->
                 <div class="card border-0 bg-transparent mt-4">
                   <h3 class="fw-semibold">Pesan dan Saran</h3>
 
@@ -291,6 +292,7 @@
                     ></textarea>
                   </div>
                 </div>
+                <!-- textarea  -->
               </div>
 
               <div class="mt-auto mb-5">
