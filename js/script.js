@@ -68,13 +68,27 @@ function validateForm() {
 
   //   untuk tag input
   for (i = 0; i < y.length; i++) {
+
+    // validasi type radio
     if (y[i].getAttribute("type") == "radio") {
       if (y[i].checked) {
+        console.log(y[i].checked);
         valid = true;
       }
     } else {
+      
+      // validasi type text email number
       if (y[i].value != "") {
         valid = true;
+      } else {
+        valid = false;
+        if (valid == false) {
+          Toast.fire({
+            icon: "warning",
+            title: "Wajib Diisi!",
+          });
+        }
+        return valid;
       }
     }
   }
