@@ -29,7 +29,7 @@
     <!-- jquery -->
 
     <!-- sweetalert2 -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
     <!-- sweetalert2 -->
 
     <link rel="stylesheet" href="css/style.css" />
@@ -41,6 +41,41 @@
         <h1 class="fw-semibold">Dinas Peternakan dan Kesehatan Hewan Provinsi Kalimantan Timur</h1>
       </div>
 
+      <!-- Toast -->
+      <div class="toast-container position-fixed top-0 end-0 p-3">
+        <div
+          id="liveToast"
+          class="toast text-bg-light"
+          role="alert"
+          aria-live="assertive"
+          aria-atomic="true"
+        >
+          <div class="toast-header">
+            <svg
+              class="bd-placeholder-img rounded me-2"
+              width="20"
+              height="20"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <rect width="100%" height="100%" fill="#dc3545"></rect>
+            </svg>
+            <strong class="me-auto">Survey Kepuasan Masha Allah</strong>
+
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="toast"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="toast-body">Pertanyaan Wajib Diisi!</div>
+        </div>
+      </div>
+      <!-- Toast -->
+
       <div class="skm container rounded-5 p-5 mt-5">
         <div class="row">
           <div class="col-md-6">
@@ -48,11 +83,11 @@
           </div>
           <div class="col-md-6 mt-3">
             <div class="row d-flex align-items-center">
-              <div class="col-md-6">
+              <div class="col-md-4">
                 <span class="fw-bold question-progress"></span>
               </div>
 
-              <div class="col-md-6">
+              <div class="col-md-8">
                 <div class="progress" style="height: 22px">
                   <div
                     class="progress-bar bg-dark"
@@ -71,8 +106,8 @@
                 <div class="card border-0 bg-transparent mt-4">
                   <div class="mb-4 row">
                     <label class="col-sm-4 col-form-label fw-semibold fs-5" for="nama"
-                      >Nama Lengkap</label
-                    >
+                      >Nama Lengkap
+                    </label>
                     <div class="col-sm-8">
                       <input type="text" class="form-control" name="nama" id="nama" autofocus />
                     </div>

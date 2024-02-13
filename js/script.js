@@ -1,14 +1,14 @@
-const Toast = Swal.mixin({
-  toast: true,
-  position: "top-end",
-  iconColor: "white",
-  customClass: {
-    popup: "colored-toast",
-  },
-  showConfirmButton: false,
-  timer: 2500,
-  timerProgressBar: true,
-});
+// const Toast = Swal.mixin({
+//   toast: true,
+//   position: "top-end",
+//   iconColor: "white",
+//   customClass: {
+//     popup: "colored-toast",
+//   },
+//   showConfirmButton: false,
+//   timer: 2500,
+//   timerProgressBar: true,
+// });
 
 let currentStep = 0;
 
@@ -66,9 +66,10 @@ function validateForm() {
   y = x[currentStep].getElementsByTagName("input");
   y2 = x[currentStep].getElementsByTagName("textarea");
 
+  invlaidInput = [];
+
   //   untuk tag input
   for (i = 0; i < y.length; i++) {
-
     // validasi type radio
     if (y[i].getAttribute("type") == "radio") {
       if (y[i].checked) {
@@ -76,19 +77,14 @@ function validateForm() {
         valid = true;
       }
     } else {
-      
       // validasi type text email number
-      if (y[i].value != "") {
-        valid = true;
-      } else {
+
+      if (y[i].value == "") {
+        invlaidInput.push(i);
         valid = false;
-        if (valid == false) {
-          Toast.fire({
-            icon: "warning",
-            title: "Wajib Diisi!",
-          });
-        }
-        return valid;
+      } else {
+        y[i].classList.remove("is-invalid");
+        valid = true;
       }
     }
   }
@@ -97,14 +93,22 @@ function validateForm() {
   for (i = 0; i < y2.length; i++) {
     if (y2[i].value != "") {
       valid = true;
+      y2[i].classList.remove("is-invalid");
+    } else {
+      y2[i].classList.add("is-invalid");
     }
   }
 
   if (valid == false) {
-    Toast.fire({
-      icon: "warning",
-      title: "Wajib Diisi!",
+    for (let x in invlaidInput) {
+      y[invlaidInput[x]].classList.add("is-invalid");
+    }
+
+    var toastElList = [].slice.call(document.querySelectorAll(".toast"));
+    var toastList = toastElList.map(function (toastEl) {
+      return new bootstrap.Toast(toastEl);
     });
+    toastList.forEach((toast) => toast.show());
   }
   return valid;
 }
