@@ -1,0 +1,3 @@
+https://sweetalert2.github.io/recipe-gallery/colored-toasts.html
+https://www.w3schools.com/howto/howto_js_form_steps.asp
+https://getbootstrap.com/docs/5.2/forms/overview/
