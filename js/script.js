@@ -10,6 +10,11 @@
 //   timerProgressBar: true,
 // });
 
+function notif() {
+  var audio = new Audio("error-2-126514.mp3");
+  audio.play();
+}
+
 let currentStep = 0;
 
 var x = document.getElementsByClassName("card");
@@ -104,6 +109,7 @@ function validateForm() {
       y[invlaidInput[x]].classList.add("is-invalid");
     }
 
+    notif();
     var toastElList = [].slice.call(document.querySelectorAll(".toast"));
     var toastList = toastElList.map(function (toastEl) {
       return new bootstrap.Toast(toastEl);
