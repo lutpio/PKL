@@ -1,15 +1,3 @@
-// const Toast = Swal.mixin({
-//   toast: true,
-//   position: "top-end",
-//   iconColor: "white",
-//   customClass: {
-//     popup: "colored-toast",
-//   },
-//   showConfirmButton: false,
-//   timer: 2500,
-//   timerProgressBar: true,
-// });
-
 function notif() {
   var audio = new Audio("error-2-126514.mp3");
   audio.play();
@@ -18,7 +6,6 @@ function notif() {
 let currentStep = 0;
 
 var x = document.getElementsByClassName("card");
-//   console.log(x.length);
 
 function showStep(step) {
   const cards = document.querySelectorAll(".card");
